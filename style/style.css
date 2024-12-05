@@ -1,0 +1,17 @@
+.Lexend{
+          font-family: "Lexend Exa", sans-serif;     
+}
+
+.common-clr-btn{
+          background: rgb(180, 244, 97);
+}
+.bg-clr{
+          background: rgb(249, 247, 243);
+}
+.brdr{
+          box-sizing: border-box;
+          border: 2px solid rgba(17, 17, 17, 0.1);
+          border-radius: 8px;
+          
+          background: rgb(255, 255, 255);
+}

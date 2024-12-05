@@ -1,84 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>My-Fifth-Assingment</title>
-          <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+          <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet"
+                    type="text/css" />
           <script src="https://cdn.tailwindcss.com"></script>
+          <link rel="stylesheet" href="style/style.css">
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
 </head>
-<body>
-          <nav>
-            <div class="container flex justify-center">
-                    <div class="navbar bg-base-100">
-                              <div class="navbar-start">
-                                <div class="dropdown">
-                                  <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                                    <svg
-                                      xmlns="http://www.w3.org/2000/svg"
-                                      class="h-5 w-5"
-                                      fill="none"
-                                      viewBox="0 0 24 24"
-                                      stroke="currentColor">
-                                      <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="2"
-                                        d="M4 6h16M4 12h16M4 18h7" />
-                                    </svg>
-                                  </div>
-                                  <ul
-                                    tabindex="0"
-                                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                                    <li><a>Homepage</a></li>
-                                    <li><a>Portfolio</a></li>
-                                    <li><a>About</a></li>
-                                  </ul>
-                                </div>
+
+<body class="Lexend">
+          <nav class="">
+               <div class="bg-clr">
+                    <div class="w-11/12 mx-auto py-8">
+                              <div class="navbar">
+                                        <div class="navbar-start">
+                                                  <div class="dropdown">
+                                                            <div tabindex="0" role="button"
+                                                                      class="btn btn-ghost btn-circle">
+                                                                      <button
+                                                                                class="btn common-clr-btn">Blog</button>
+                                                            </div>
+                                                  </div>
+                                        </div>
+                                        <div class="navbar-center">
+                                                  <div class="flex justify-center items-center gap-4">
+                                                            <img class="" src="logo.png" alt="">
+                                                            <h1 class="text-xl font-bold">Donate Bangladesh</h1>     
+                                                  </div>
+                                                  
+                                        </div>
+                                        <div class="navbar-end">
+                                                 <div class="flex justify-center items-center gap-4">
+                                                  <img class="border-dotted bg-slate-300" src="coin.png" alt="">
+                                                  <h1>5500 BDT</h1>
+                                                 </div>
+                                        </div>
                               </div>
-                              <div class="navbar-center">
-                                <a class="btn btn-ghost text-xl">daisyUI</a>
-                              </div>
-                              <div class="navbar-end">
-                                <button class="btn btn-ghost btn-circle">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    class="h-5 w-5"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                      stroke-width="2"
-                                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                                  </svg>
-                                </button>
-                                <button class="btn btn-ghost btn-circle">
-                                  <div class="indicator">
-                                    <svg
-                                      xmlns="http://www.w3.org/2000/svg"
-                                      class="h-5 w-5"
-                                      fill="none"
-                                      viewBox="0 0 24 24"
-                                      stroke="currentColor">
-                                      <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="2"
-                                        d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-                                    </svg>
-                                    <span class="badge badge-xs badge-primary indicator-item"></span>
-                                  </div>
-                                </button>
-                              </div>
-                            </div>
-            </div>    
+                    </div>
+               </div>
+                 
+               <div class="btn-style flex justify-center my-10 gap-4">
+                    <button class="btn btn-lg">Donation</button>
+                    <button class="btn btn-lg">History</button>
+
+               </div>
+               <div class="divider"></div>
           </nav>
-          <main></main>
+          <main>
+                 <div class="w-11/12 mx-auto gap-8 lg:flex mt-5 rounded-xl shadow-2xl p-5">
+                    <div class="lg:w-[50%] mt-5">
+                       <img src="noakhali.png" alt="">
+                    </div>
+                    <div class="lg:w-[50%] space-y-7  ">
+                              <div class="btn mt-5">
+                                        <button class="flex justify-center items-center gap-4">
+                                                  <img src="coin.png" alt="">
+                                                  <h1>0 BDT</h1></button>
+                              </div>
+
+                              <h1 class="text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+
+                                                  <p class="text-sm font-light"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                                                  <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full font-light text-sm " />
+
+                                                  <button class="btn btn-block common-clr-btn">Donate Now</button>
+                    </div>
+                 </div>   
+                 <div class="w-11/12 mx-auto gap-8 lg:flex mt-10 rounded-xl shadow-2xl p-5">
+                    <div class="lg:w-[50%] mt-5">
+                       <img src="feni.png" alt="">
+                    </div>
+                    <div class="lg:w-[50%] space-y-8  ">
+                              <div class="btn mt-5">
+                                        <button class="flex justify-center items-center gap-4">
+                                                  <img src="coin.png" alt="">
+                                                  <h1>600 BDT</h1></button>
+                              </div>
+
+                              <h1 class="text-xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
+
+                                                  <p class="text-sm font-light">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+                                                  <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full font-light text-sm " />
+
+                                                  <button class="btn btn-block common-clr-btn">Donate Now</button>
+                    </div>
+                 </div>   
+                 <div class="w-11/12 mx-auto gap-8 lg:flex mt-10 rounded-xl shadow-2xl p-5">
+                    <div class="lg:w-[50%] mt-5">
+                       <img src="quota-protest.png" alt="">
+                    </div>
+                    <div class="lg:w-[50%] space-y-8  ">
+                              <div class="btn mt-5">
+                                        <button class="flex justify-center items-center gap-4">
+                                                  <img src="coin.png" alt="">
+                                                  <h1>2400 BDT</h1></button>
+                              </div>
+
+                              <h1 class="text-xl font-bold">Aid for Injured in the Quota Movement</h1>
+
+                                                  <p class="text-sm font-light">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+                                                  <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full font-light text-sm " />
+
+                                                  <button class="btn btn-block common-clr-btn">Donate Now</button>
+                    </div>
+                 </div>   
+          </main>
           <footer></footer>
 
 
-          
+
 </body>
+
 </html>
