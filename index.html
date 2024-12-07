@@ -14,9 +14,9 @@
 </head>
 
 <body class="Lexend">
-   <header class="sticky top-0 bg-blur">
+   <header class="sticky top-0 backdrop-blur-sm">
       <div class="bg-clr">
-         <div class="w-11/12 mx-auto py-8">
+         <div class="w-11/12 mx-auto py-4">
             <div class="navbar">
                <div class="navbar-start">
                   <div class="dropdown">
@@ -27,15 +27,15 @@
                </div>
                <div class="navbar-center">
                   <div class="flex justify-center items-center gap-4">
-                     <img class="" src="logo.png" alt="">
-                     <h1 class="text-xl font-bold">Donate Bangladesh</h1>
+                     <img class="size-10" src="logo.png" alt="">
+                     <h1 class="text-xl text-black font-bold hidden lg:block">Donate Bangladesh</h1>
                   </div>
 
                </div>
                <div class="navbar-end">
                   <div class="flex justify-center items-center gap-4">
-                     <img class="border-dotted bg-slate-300" src="coin.png" alt="">
-                     <p><span id="total-amount">5500 </span> BDT</p>
+                     <img class="border-dotted size-5 bg-slate-300" src="coin.png" alt="">
+                     <p class="text-sm text-gray-500"><span id="total-amount">5500.00 </span> BDT</p>
                   </div>
                </div>
             </div>
@@ -43,8 +43,8 @@
       </div>
 
       <div class="btn-style flex justify-center my-10 gap-4">
-         <button id="btn-donate" class="btn common-clr-btn btn-lg">Donation</button>
-         <button id="btn-history" class="btn btn-lg">History</button>
+         <button id="btn-donate" class="btn common-clr-btn">Donation</button>
+         <button id="btn-history" class="btn">History</button>
 
       </div>
       <div class="divider"></div>
@@ -59,7 +59,7 @@
                <div class="btn mt-5">
                   <button class="flex justify-center items-center gap-4">
                      <img src="coin.png" alt="">
-                     <p> <span id="noakhali-amnt">0 </span> BDT</p>
+                     <p class="text-xs text-gray-500"> <span id="noakhali-amnt">0.00 </span> BDT</p>
                   </button>
                </div>
    
@@ -83,7 +83,7 @@
                <div class="btn mt-5">
                   <button class="flex justify-center items-center gap-4">
                      <img src="coin.png" alt="">
-                     <p> <span id="Feni-amount">600 </span> BDT</p>
+                     <p class="text-xs text-gray-500"> <span id="Feni-amount">600.00 </span> BDT</p>
                   </button>
                </div>
    
@@ -108,7 +108,7 @@
                <div class="btn mt-5">
                   <button class="flex justify-center items-center gap-4">
                      <img src="coin.png" alt="">
-                     <p> <span id="quota-amount">2400 </span> BDT</p>
+                     <p class="text-xs text-gray-500"> <span id="quota-amount">2400.00 </span> BDT</p>
                   </button>
                </div>
    
@@ -133,7 +133,16 @@
       <!-- History section  -->
         
       <div id="btn-history-from" class=" w-11/12 mx-auto hidden">
-         <div class="join join-vertical">
+
+         <div id="history-list" class="mb-4 ">
+
+         </div>
+
+
+
+
+
+         <!-- <div class="join join-vertical w-full">
             <div class="collapse collapse-arrow join-item border-base-300 border">
               <input type="radio" name="my-accordion-4" checked="checked" />
               <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
@@ -162,7 +171,7 @@
                 <p>hello</p>
               </div>
             </div>
-          </div>
+          </div> -->
       </div>
 
    </div>

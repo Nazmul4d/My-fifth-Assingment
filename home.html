@@ -11,84 +11,94 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+          integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="Lexend">
-     <header id="head">
+     <header class="sticky top-0 backdrop-blur-sm">
           <div class="bg-clr">
-               <div class="w-11/12 mx-auto py-8">
+               <div class="w-11/12 mx-auto py-4">
                     <div class="navbar">
                          <div class="navbar-start">
                               <div class="dropdown">
                                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                                        <button id="blog-btn" class="btn common-clr-btn">Home</button>
+                                        <a href="/index.html"><button id="home-btn"
+                                                  class="btn common-clr-btn">Blog</button></a>
                                    </div>
                               </div>
                          </div>
                          <div class="navbar-center">
                               <div class="flex justify-center items-center gap-4">
-                                   <img class="" src="logo.png" alt="">
-                                   <h1 class="text-xl font-bold">Donate Bangladesh</h1>
+                                   <img class="size-10" src="logo.png" alt="">
+                                   <h1 class="text-xl text-black font-bold hidden lg:block">Donate Bangladesh</h1>
                               </div>
 
                          </div>
                          <div class="navbar-end">
                               <div class="flex justify-center items-center gap-4">
-                                   <img class="border-dotted bg-slate-300" src="coin.png" alt="">
-                                   <h1>5500 BDT</h1>
+                                   <img class="border-dotted size-5 bg-slate-300" src="coin.png" alt="">
+                                   <p class="text-sm text-gray-500"><span id="total-amount">5500.00 </span> BDT</p>
                               </div>
                          </div>
                     </div>
                </div>
           </div>
-
-          <!-- <div class="btn-style flex justify-center my-10 gap-4">
-               <button class="btn btn-lg">Donation</button>
-               <button class="btn btn-lg">History</button>
-
-          </div> -->
-          
      </header>
      <main>
-
-          <div class="my-10">
-               <p class="font-bold text-4xl ">Important FAQ <span><i class="fa-solid fa-person-circle-question"></i></span></p>
+          <div class="-z-0">
+               <div class="my-14">
+                    <p class="font-extrabold text-4xl ">Important FAQ <span><i class="fa-solid fa-person-circle-question"></i></span></p>
+               </div>
+               <div class="divider"></div>
+               <div class="join join-vertical w-full">
+                    <div class="collapse collapse-arrow join-item border-base-300 border">
+                         <input type="radio" name="my-accordion-4" checked="checked" />
+                         <div class="collapse-title text-xl font-bold">1. Q: What is DOM and how does it work?</div>
+                         <div class="collapse-content">
+                              <p class="text-xs">Answer:
+                                   DOM (Document Object Model) is a structured representation of a web page. It converts the
+                                   HTML or XML document into a tree-like structure,<br> where each element is known as a
+                                   "node". A page's content, style, and structure can be dynamically changed through the DOM
+                                   using JavaScript.</p>
+                         </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border-base-300 border">
+                         <input type="radio" name="my-accordion-4" />
+                         <div class="collapse-title text-xl font-bold">2. Question: How to select an HTML element using DOM?
+                         </div>
+                         <div class="collapse-content">
+                              <p>Answer:The DOM uses various methods to select HTML elements, such as:</p>
+                              <div class="text-xs mt-4">
+                                   <li>getElementById</li>
+                                   <li>getElementsByClassName</li>
+                                   <li>querySelector</li>
+                                   <li>querySelectorAll</li>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border-base-300 border">
+                         <input type="radio" name="my-accordion-4" />
+                         <div class="collapse-title text-xl font-bold">3. Question: How to create a new element with DOM
+                              and add it to the page?</div>
+                         <div class="collapse-content">
+                              <p class="text-xs">Answer:
+                                   New elements can be created and added using the DOM's createElement and appendChild
+                                   methods</p>
+                         </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border-base-300 border">
+                         <input type="radio" name="my-accordion-4" />
+                         <div class="collapse-title text-xl font-bold">4. Q: How to change the style of an element with
+                              DOM?</div>
+                         <div class="collapse-content">
+                              <p class="text-xs">Answer:
+                                 Elements can be styled through CSS using the style property of the DOM.</p>
+                         </div>
+                    </div>
+               </div>
           </div>
-
-          <div class="divider"></div>
-         
-          <div class="join join-vertical w-full">
-               <div class="collapse collapse-arrow join-item border-base-300 border">
-                 <input type="radio" name="my-accordion-4" checked="checked" />
-                 <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-                 <div class="collapse-content">
-                   <p>hello</p>
-                 </div>
-               </div>
-               <div class="collapse collapse-arrow join-item border-base-300 border">
-                 <input type="radio" name="my-accordion-4" />
-                 <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-                 <div class="collapse-content">
-                   <p>hello</p>
-                 </div>
-               </div>
-               <div class="collapse collapse-arrow join-item border-base-300 border">
-                 <input type="radio" name="my-accordion-4" />
-                 <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-                 <div class="collapse-content">
-                   <p>hello</p>
-                 </div>
-               </div>
-               <div class="collapse collapse-arrow join-item border-base-300 border">
-                 <input type="radio" name="my-accordion-4" />
-                 <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-                 <div class="collapse-content">
-                   <p>hello</p>
-                 </div>
-               </div>
-             </div>
-
      </main>
      <footer>
           <div class="bg-[#F9F7F3] py-10">
@@ -96,7 +106,7 @@
      </footer>
 
 
-      
+
 </body>
 
 </html>

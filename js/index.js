@@ -1,23 +1,23 @@
 // document.getElementById('donate-btn')
 //           .addEventListener('click', function () {
-          
+
 
 //           const noakhaliInput = document.getElementById('input-noakhali').value;
 //           const amntNoakhali = document.getElementById('noakhali-amnt').innerText;
 
-          
+
 
 //           const inputNbr = parseFloat(noakhaliInput);
 //           const noakhaliNbr= parseFloat(amntNoakhali);
 
-          
-         
-          
+
+
+
 //           const total = inputNbr + noakhaliNbr
 
 //           document.getElementById('noakhali-amnt').innerText = (total);
 
-          
+
 
 //           const totalAmnt = document.getElementById('total-amount').innerText;
 //           const totalAmntNbr = parseFloat(totalAmnt);
@@ -29,18 +29,21 @@
 //           document.getElementById('total-amount').innerText = (totalBalance);
 
 
-          
-
 
 //           })
 
 
 document.getElementById('home-btn')
- .addEventListener('click', function(){
-  
-          window.location.href = '/home.html';
-})
+  .addEventListener('click', function () {
 
+    window.location.href = '/home.html';
+  })
+
+  // document.getElementById('blog-btn')
+  // .addEventListener('click', function () {
+  //   console.log('amahgd')
+  //   // window.location.href = '/index.html';
+  // });
 
 
 
@@ -51,119 +54,126 @@ document.getElementById('home-btn')
 
 
 document.getElementById('donate-btn')
-          .addEventListener('click', function (){
+  .addEventListener('click', function () {
 
-             const noakhaliInput = getInputFileValueById ('input-noakhali');
-             const amntNoakhali = getTextFileValueById('noakhali-amnt');
-
-             
-
-          if( !isNaN(noakhaliInput) && noakhaliInput >= 0){
-            const totalValue = noakhaliInput + amntNoakhali;
-            
-            document.getElementById('noakhali-amnt').innerText = (totalValue);
-
-            const totalAmount = getTextFileValueById('total-amount');
-            const totalBalance = totalAmount - totalValue;
-
-            document.getElementById('total-amount').innerText = (totalBalance);
-
-          }
-
-          else{
-                    alert("Please Provide A Number")
-          }
+    const noakhaliInput = getInputFileValueById('input-noakhali');
+    const amntNoakhali = getTextFileValueById('noakhali-amnt');
 
 
-          })
 
-          // FENI DONATION JS.CODE
+    if (!isNaN(noakhaliInput) && noakhaliInput >= 0) {
+      const totalValue = noakhaliInput + amntNoakhali;
 
-          document.getElementById('donate-btn2')
-          .addEventListener('click', function (){
+      document.getElementById('noakhali-amnt').innerText = (totalValue.toFixed(2));
 
-             const feniInput = getInputFileValueById ('input-Feni');
-             const amntFeni = getTextFileValueById('Feni-amount');
+      const totalAmount = getTextFileValueById('total-amount');
+      const totalBalance = totalAmount - totalValue;
 
-             
+      document.getElementById('total-amount').innerText = (totalBalance.toFixed(2));
 
-          if( !isNaN(feniInput) && feniInput >= 0){
-            const totalValue2 = feniInput + amntFeni;
-            
-            document.getElementById('Feni-amount').innerText = (totalValue2);
+    }
 
-            const totalAmount2 = getTextFileValueById('total-amount');
-            const totalBalance2 = totalAmount2 - totalValue2;
-
-            document.getElementById('total-amount').innerText = (totalBalance2);
-
-          }
-
-          else{
-                    alert("Please Provide A Number")
-          }
+    else {
+      alert("Please Provide A Number")
+    }
 
 
-          })
+  })
+
+// FENI DONATION JS.CODE
+
+document.getElementById('donate-btn2')
+  .addEventListener('click', function () {
+
+    const feniInput = getInputFileValueById('input-Feni');
+    const amntFeni = getTextFileValueById('Feni-amount');
 
 
-          // QUOTA AID INJURED JS.CODE
 
-           
-          document.getElementById('donate-btn3')
-          .addEventListener('click', function (){
+    if (!isNaN(feniInput) && feniInput >= 0) {
+      const totalValue2 = feniInput + amntFeni;
 
-             const quotaInput = getInputFileValueById ('input-quota');
-             const amntQuota = getTextFileValueById('quota-amount');
+      document.getElementById('Feni-amount').innerText = (totalValue2.toFixed(2));
 
-             
+      const totalAmount2 = getTextFileValueById('total-amount');
+      const totalBalance2 = totalAmount2 - totalValue2;
 
-          if( !isNaN(quotaInput) && quotaInput>= 0){
-            const totalValue3 = quotaInput + amntQuota ;
-            
-            document.getElementById('quota-amount').innerText = (totalValue3);
+      document.getElementById('total-amount').innerText = (totalBalance2.toFixed(2));
 
-            const totalAmount3 = getTextFileValueById('total-amount');
-            const totalBalance3 = totalAmount3 - totalValue3;
+    }
 
-            document.getElementById('total-amount').innerText = (totalBalance3);
-
-          }
-
-          else{
-                    alert("Please Provide A Number")
-          }
+    else {
+      alert("Please Provide A Number")
+    }
 
 
-          })
+  })
 
 
-          // button section
+// QUOTA AID INJURED JS.CODE
 
-          
-          document.getElementById('btn-history').addEventListener('click', function (){
-                    showSectionById('btn-history-from');
-          });
 
-      
-          document.getElementById('btn-donate').addEventListener('click', function(){
-            showSectionById('btn-donation-from');
-          })
-        
+document.getElementById('donate-btn3')
+  .addEventListener('click', function () {
 
-          document.getElementById('btn-history')
-          .addEventListener('click',function(){
+    const quotaInput = getInputFileValueById('input-quota');
+    const amntQuota = getTextFileValueById('quota-amount');
 
-            document.getElementById('btn-history').classList.add('common-clr-btn');
-            document.getElementById('btn-donate').classList.remove('common-clr-btn');
 
-          
+
+    if (!isNaN(quotaInput) && quotaInput >= 0) {
+      const totalValue3 = quotaInput + amntQuota;
+
+      document.getElementById('quota-amount').innerText = (totalValue3.toFixed(2));
+
+      const totalAmount3 = getTextFileValueById('total-amount');
+      const totalBalance3 = totalAmount3 - totalValue3;
+
+      document.getElementById('total-amount').innerText = (totalBalance3.toFixed(2));
+
+    }
+
+    else {
+      alert("Please Provide A Number")
+    }
+
+
+  })
+
+
+// button section
+
+
+document.getElementById('btn-history').addEventListener('click', function () {
+  showSectionById('btn-history-from');
+});
+
+
+document.getElementById('btn-donate').addEventListener('click', function () {
+  showSectionById('btn-donation-from');
+})
+
+
+document.getElementById('btn-history')
+  .addEventListener('click', function () {
+
+    document.getElementById('btn-history').classList.add('common-clr-btn');
+    document.getElementById('btn-donate').classList.remove('common-clr-btn');
+    
+
+
+  })
+document.getElementById('btn-donate')
+  .addEventListener('click', function () {
+
+    document.getElementById('btn-donate').classList.add('common-clr-btn');
+    document.getElementById('btn-history').classList.remove('common-clr-btn');
   
-          })
-          document.getElementById('btn-donate')
-          .addEventListener('click',function(){
 
-            document.getElementById('btn-donate').classList.add('common-clr-btn');
-            document.getElementById('btn-history').classList.remove('common-clr-btn');
-  
-          })
+  })
+
+  // historyItems
+
+  document.getElementById('history-list').addEventListener('click',function(){
+   
+  })
