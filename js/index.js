@@ -52,13 +52,28 @@
 // NOAKHALI DONATION JS.CODE
 
 
+// const totalAmount = getTextFileValueById('total-amount');
+// const totalBalance = totalAmount - totalValue;
+
+// document.getElementById('total-amount').innerText = (totalBalance.toFixed(2));
+
+
+
+
+//  const noakhaliInput = getInputFileValueById('input-noakhali');
+//     const amntNoakhali = getTextFileValueById('noakhali-amnt');
+//     const totalAmount = getTextFileValueById('total-amount');
+
+
+
+
 
 document.getElementById('donate-btn')
   .addEventListener('click', function () {
 
     const noakhaliInput = getInputFileValueById('input-noakhali');
     const amntNoakhali = getTextFileValueById('noakhali-amnt');
-
+    const totalAmount = getTextFileValueById('total-amount');
 
 
     if (!isNaN(noakhaliInput) && noakhaliInput >= 0) {
@@ -66,8 +81,9 @@ document.getElementById('donate-btn')
 
       document.getElementById('noakhali-amnt').innerText = (totalValue.toFixed(2));
 
-      const totalAmount = getTextFileValueById('total-amount');
+    
       const totalBalance = totalAmount - totalValue;
+      console.log(totalBalance);
 
       document.getElementById('total-amount').innerText = (totalBalance.toFixed(2));
 
@@ -87,6 +103,7 @@ document.getElementById('donate-btn2')
 
     const feniInput = getInputFileValueById('input-Feni');
     const amntFeni = getTextFileValueById('Feni-amount');
+    const totalAmount = getTextFileValueById('total-amount');
 
 
 
@@ -95,10 +112,10 @@ document.getElementById('donate-btn2')
 
       document.getElementById('Feni-amount').innerText = (totalValue2.toFixed(2));
 
-      const totalAmount2 = getTextFileValueById('total-amount');
-      const totalBalance2 = totalAmount2 - totalValue2;
+      // const totalAmount2 = getTextFileValueById('total-amount');
+      const totalBalance = totalAmount- totalValue2;
 
-      document.getElementById('total-amount').innerText = (totalBalance2.toFixed(2));
+      document.getElementById('total-amount').innerText = (totalBalance.toFixed(2));
 
     }
 
@@ -118,6 +135,7 @@ document.getElementById('donate-btn3')
 
     const quotaInput = getInputFileValueById('input-quota');
     const amntQuota = getTextFileValueById('quota-amount');
+    const totalAmount = getTextFileValueById('total-amount');
 
 
 
@@ -126,10 +144,10 @@ document.getElementById('donate-btn3')
 
       document.getElementById('quota-amount').innerText = (totalValue3.toFixed(2));
 
-      const totalAmount3 = getTextFileValueById('total-amount');
-      const totalBalance3 = totalAmount3 - totalValue3;
+      // const totalAmount3 = getTextFileValueById('total-amount');
+      const totalBalance = totalAmount - totalValue3;
 
-      document.getElementById('total-amount').innerText = (totalBalance3.toFixed(2));
+      document.getElementById('total-amount').innerText = (totalBalance.toFixed(2));
 
     }
 

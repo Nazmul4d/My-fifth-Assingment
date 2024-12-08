@@ -11,6 +11,8 @@ function getTextFileValueById(id){
     return textNbr;
 }
 
+
+
 function showSectionById (id){
     document.getElementById('btn-donation-from').classList.add('hidden'); 
 
