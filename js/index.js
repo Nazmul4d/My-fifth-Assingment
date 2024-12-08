@@ -76,7 +76,7 @@ document.getElementById('donate-btn')
     const totalAmount = getTextFileValueById('total-amount');
 
 
-    if (!isNaN(noakhaliInput) && noakhaliInput >= 0 && Number.isInteger(Number) ) {
+    if (!isNaN(noakhaliInput) && noakhaliInput >= 0) {
       const totalValue = noakhaliInput + amntNoakhali;
 
       document.getElementById('noakhali-amnt').innerText = (totalValue.toFixed(2));
@@ -110,7 +110,7 @@ document.getElementById('donate-btn2')
 
 
 
-    if (!isNaN(feniInput) && feniInput >= 0 && Number.isInteger(Number)) {
+    if (isNaN(feniInput) && feniInput >= 0 ) {
       const totalValue2 = feniInput + amntFeni;
 
       document.getElementById('Feni-amount').innerText = (totalValue2.toFixed(2));
@@ -144,7 +144,7 @@ document.getElementById('donate-btn3')
 
 
 
-    if (!isNaN(quotaInput) && quotaInput >= 0 && Number.isInteger(Number)) {
+    if (!isNaN(quotaInput) && quotaInput >= 0) {
       const totalValue3 = quotaInput + amntQuota;
 
       document.getElementById('quota-amount').innerText = (totalValue3.toFixed(2));
