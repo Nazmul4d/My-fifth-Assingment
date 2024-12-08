@@ -76,24 +76,27 @@ document.getElementById('donate-btn')
     const totalAmount = getTextFileValueById('total-amount');
 
 
-    if (!isNaN(noakhaliInput) && noakhaliInput >= 0) {
+    if (!isNaN(noakhaliInput) && noakhaliInput >= 0 && Number.isInteger(Number) ) {
       const totalValue = noakhaliInput + amntNoakhali;
 
       document.getElementById('noakhali-amnt').innerText = (totalValue.toFixed(2));
 
     
       const totalBalance = totalAmount - totalValue;
-      console.log(totalBalance);
 
       document.getElementById('total-amount').innerText = (totalBalance.toFixed(2));
-
+     
+      
+      document.getElementById('my_modal_5').showModal();
+     
     }
 
     else {
       alert("Please Provide A Number")
     }
 
-
+    document.getElementById('input-noakhali').value=" ";
+    
   })
 
 // FENI DONATION JS.CODE
@@ -107,7 +110,7 @@ document.getElementById('donate-btn2')
 
 
 
-    if (!isNaN(feniInput) && feniInput >= 0) {
+    if (!isNaN(feniInput) && feniInput >= 0 && Number.isInteger(Number)) {
       const totalValue2 = feniInput + amntFeni;
 
       document.getElementById('Feni-amount').innerText = (totalValue2.toFixed(2));
@@ -116,14 +119,16 @@ document.getElementById('donate-btn2')
       const totalBalance = totalAmount- totalValue2;
 
       document.getElementById('total-amount').innerText = (totalBalance.toFixed(2));
-
+       
+      document.getElementById('my_modal_5').showModal();
     }
 
     else {
       alert("Please Provide A Number")
     }
 
-
+    document.getElementById('input-Feni').value=" ";
+    
   })
 
 
@@ -139,7 +144,7 @@ document.getElementById('donate-btn3')
 
 
 
-    if (!isNaN(quotaInput) && quotaInput >= 0) {
+    if (!isNaN(quotaInput) && quotaInput >= 0 && Number.isInteger(Number)) {
       const totalValue3 = quotaInput + amntQuota;
 
       document.getElementById('quota-amount').innerText = (totalValue3.toFixed(2));
@@ -148,6 +153,7 @@ document.getElementById('donate-btn3')
       const totalBalance = totalAmount - totalValue3;
 
       document.getElementById('total-amount').innerText = (totalBalance.toFixed(2));
+      document.getElementById('my_modal_5').showModal();
 
     }
 
@@ -155,7 +161,8 @@ document.getElementById('donate-btn3')
       alert("Please Provide A Number")
     }
 
-
+    document.getElementById('input-quota').value=" ";
+    
   })
 
 
