@@ -110,7 +110,7 @@ document.getElementById('donate-btn2')
 
 
 
-    if (isNaN(feniInput) && feniInput >= 0 ) {
+    if (!isNaN(feniInput) && feniInput >= 0 ) {
       const totalValue2 = feniInput + amntFeni;
 
       document.getElementById('Feni-amount').innerText = (totalValue2.toFixed(2));
